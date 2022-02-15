@@ -18,6 +18,10 @@ while not correct:
     print(*x, sep='')
 
   
+  if tries >= 6:
+    print("You lost, the word was " + word)
+    break
+
   userGuess = input("\nplease guess a word: ").lower()
 
   
@@ -37,9 +41,6 @@ while not correct:
   else:
     print("Please guess a word with 5 letters")
 
-  if tries > 6:
-    print("You lost, the word was " + word)
-    break
 
 
   wordleCurrentRow += 1
